@@ -37,7 +37,7 @@ app.post('/upload', (req, res) => {
 
     // uploading the temp file to cloudinary server
     cloudinary.uploader.upload(file.tempFilePath,
-        {folder: '/pritha-test/'},
+        {folder: '/test/'},
         (error, result) => {
         
         console.log( error , result)
